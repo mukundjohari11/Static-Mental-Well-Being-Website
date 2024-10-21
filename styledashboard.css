@@ -1,0 +1,138 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.sidebar {
+    width: 250px;
+    background-color: #6e45e2;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #fff;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.sidebar ul li {
+    width: 100%;
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+.sidebar ul li a:hover {
+    background-color: #5a3eb3;
+}
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+header h1 {
+    font-size: 28px;
+    color: #333;
+}
+header p {
+    font-size: 16px;
+    color: #666;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card h3 {
+    font-size: 18px;
+    color: #6e45e2;
+    margin-bottom: 15px;
+}
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+.card button {
+    background-color: #6e45e2;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+.card button:hover {
+    background-color: #5a3eb3;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+        height: auto;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+    }
+    .sidebar ul li {
+        text-align: left;
+    }
+    .main-content {
+        padding: 20px;
+    }
+    header {
+        margin-bottom: 20px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}

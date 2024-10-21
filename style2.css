@@ -1,0 +1,119 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #89d4cf, #6e45e2);
+    animation: backgroundFade 8s infinite alternate ease-in-out;
+}
+
+@keyframes backgroundFade {
+    0% {
+        background: linear-gradient(to bottom right, #89d4cf, #6e45e2);
+    }
+    50% {
+        background: linear-gradient(to bottom right, #b2f7ef, #d4a5f9);
+    }
+    100% {
+        background: linear-gradient(to bottom right, #89d4cf, #6e45e2);
+    }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-message h1 {
+    font-size: 24px;
+    color: #6e45e2;
+    animation: textSlide 2s ease-in-out;
+}
+
+.welcome-message p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+@keyframes textSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.sign-in-form h2 {
+    color: #6e45e2;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input:focus {
+    border-color: #6e45e2;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6e45e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a3eb3;
+}
+
+.forgot-password {
+    color: #6e45e2;
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #5a3eb3;
+}

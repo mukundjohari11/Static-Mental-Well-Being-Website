@@ -1,0 +1,254 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d5e1df, #f0d6d5);
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+.bliss  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.wizard  {
+    display: flex;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.image_section {
+    flex: 1;
+    background:fixed;
+    margin:  0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d5e1df, #f0d6d5);
+    overflow: hidden;
+    height: 100vh;
+    }
+
+    
+    
+    .bliss {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    
+    .wizard {
+        display: flex;
+        max-width: 900px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+    
+    .image_section {
+        flex: 1;
+        background: url('https://images.pexels.com/photos/1498332/pexels-photo-1498332.jpeg?cs=srgb&dl=pexels-reafonbgates-1498332.jpg&fm=jpg') no-repeat center center;
+        background-size: cover;
+        animation: backgroundFade 10s ease-in-out infinite;
+    }
+    
+    
+    @keyframes backgroundFade {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.8; }
+    }
+    
+    
+    .form_section {
+        flex: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    h1 {
+        color: #4a4e69;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        color: #4a4e69;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        font-size: 16px;
+    }
+    
+    
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border: none;
+        background: linear-gradient(135deg, #a3c9c7, #f5a8a8);
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.5s;
+    }
+    
+    button:hover {
+        background: linear-gradient(135deg, #f5a8a8, #a3c9c7);
+        transform: scale(1.05);
+    }
+    
+    
+    .social_media {
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+    }
+    
+    .social_media img {
+        width: 35px;
+        height: 35px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .social_media img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .motivation {
+        margin-top: 15px;
+        color: #616161;
+        font-style: italic;
+    }
+    .signup a {
+        color: #4a4e69;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .signup a:hover {
+        text-decoration: underline;
+    }
+ no-repeat center center{
+    background-size: cover;
+    animation: backgroundFade 10s ease-in-out infinite;
+}
+
+
+@keyframes backgroundFade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+
+.form_section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #4a4e69;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #4a4e69;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    background: linear-gradient(135deg, #a3c9c7, #f5a8a8);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.5s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #f5a8a8, #a3c9c7);
+    transform: scale(1.05);
+}
+
+
+.social_media {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.social_media img {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social_media img:hover {
+    transform: scale(1.1);
+}
+
+
+.motivation {
+    margin-top: 15px;
+    color: #616161;
+    font-style: italic;
+}
+.signup a {
+    color: #4a4e69;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}

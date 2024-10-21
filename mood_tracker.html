@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Mood Tracker</title>
+    <link rel="stylesheet" href="1style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Tracker</h1>
+        <div class="mood-meter">
+            <button class="mood-btn" data-mood="😢">Sad</button>
+            <button class="mood-btn" data-mood="😐">Neutral</button>
+            <button class="mood-btn" data-mood="😊">Happy</button>
+            <button class="mood-btn" data-mood="😁">Excited</button>
+        </div>
+        <div class="mood-display">
+            <p>Current Mood: <span id="current-mood">Select a mood</span></p>
+        </div>
+    </div>
+
+    <script>
+        const moodButtons = document.querySelectorAll('.mood-btn');
+        const moodDisplay = document.getElementById('current-mood');
+
+        moodButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const mood = button.dataset.mood;
+                moodDisplay.textContent = mood;
+            });
+        });
+    </script>
+</body>
+</html>
